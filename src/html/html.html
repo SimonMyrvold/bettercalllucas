@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/css/output.css" />
+    <title>Document</title>
+    <link rel="shortcut icon" href="../bilder/favicon.ico" type="image/x-icon">
+  </head>
+  <body
+    class="h-fit w-fit bg-bakgrund bg-cover bg-no-repeat font-windows"
+  >
+    <div
+      class="text-area absolute top-[10vh] left-1/3 bg-gray-400 w-1/3 h-fit border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900 border-white"
+    >
+      <div
+        class="text-area-header bg-blue-900 text-white flex justify-start w-auto"
+      >
+        <p class="ml-1 mt-auto mb-auto text-[3vh]">Application: Messenger</p>
+        <div class="flex h-[5vh] w-fit ml-auto p-1 font-bold text-[3vh] content-center align-middle">
+          <button data-tooltip-target="tooltip-default" type="button" class="text-black w-[4vh] h-[4vh] content-around border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900 bg-gray-400 hover:bg-gray-300">
+            <p class="m-auto">?</p>
+          </button>
+          <div id="tooltip-default" role="tooltip" class="inline-block absolute invisible z-10 py-2 px-3 text-[2.5vh] font-semibold text-black bg-gray-400 shadow-sm opacity-0 transition-opacity duration-300 tooltip border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900">
+            Lucas will remember your choices, make sure you dont ruin his opinion of you!.
+            <div class="tooltip-arrow" data-popper-arrow></div>
+          </div>
+          <button id="close" class="text-black w-[4vh] h-[4vh] content-around ml-1 border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900 bg-gray-400 hover:bg-gray-300"><p class="m-auto">X</p></button>
+        </div>
+      </div>
+
+      <div
+        id="textContainer"
+        class="message-show h-[30vh] relative w-auto m-[3%] bg-white text-[3vh] font-medium overflow-y-scroll border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-t-gray-900 border-r-[0.3vh] border-l-gray-900"
+      >
+        <div class="pl-3 leading-relaxed" id="text"></div>
+      </div>
+      <div class="text-area-footer m-[3%]">
+        <div class="messageAndSend flex w-full">
+          <div class="messageArea w-[80%] h-[7vh] bg-white mb-[2%] border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-t-gray-900 border-r-[0.3vh] border-l-gray-900 text-left text-[2.2vh] font-bold overflow-y-auto flex">
+            <p id="wText" class="self-center"></p>
+          </div>
+          <button
+            class="bg-gray-400 hover:bg-gray-300 border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900 h-[7vh] w-2/12 text-[2.2vh] font-bold ml-auto"
+          >
+            Send
+          </button>
+        </div>
+
+        <div id="option-buttons" class="flex flex-col ">
+          <!-- <button
+            class="btn text-left border-l-[0.3vh] border-t-[0.3vh] border-b-[0.3vh] border-b-gray-900 border-r-[0.3vh] border-r-gray-900 bg-gray-400 hover:bg-gray-300 my-[1%] py-2 px-4 w-fit h-[7vh] text-[2.2vh] text-gray-800 font-bold overflow-y-scroll"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore
+            repellat sed eaque, nemo magni itaque quas modi enim accusamus
+            veritatis!
+          </button>
+          <button
+            class="btn text-left border-l-2 border-t-2 border-b-2 border-b-gray-900 border-r-2 border-r-gray-900 bg-gray-400 hover:bg-gray-300 my-[1%] py-2 px-4 w-fit h-[7vh] text-[2.2vh] text-gray-800 font-bold overflow-y-scroll"
+          >
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam,
+            atque?
+          </button>
+          <button
+            class="btn text-left border-l-2 border-t-2 border-b-2 border-b-gray-900 border-r-2 border-r-gray-900 bg-gray-400 hover:bg-gray-300 my-1 py-2 px-4 w-fit h-[7vh] text-[2.2vh] text-gray-800 font-bold overflow-y-scroll"
+          >
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora
+            iste quibusdam consectetur ratione incidunt molestiae?
+          </button> -->
+        </div>
+        <div class="send-button"></div>
+      </div>
+    </div>
+    <script src="/node_modules/flowbite/dist/flowbite.js"></script> 
+    <script src="/src/js/app.js"></script>
+    
+  </body>
+</html>
